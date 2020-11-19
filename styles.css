@@ -1,0 +1,378 @@
+html {
+    --main-color: #F24284;
+    --secondary-color: #F34073;
+    --auxiliar-color: #D89AA6;
+    --dark-color: #000;
+    --white-color: #FFF;
+    --gold-color: gold;
+}
+
+.btn-primary {
+    background-color: var(--auxiliar-color);
+    border-color: var(--auxiliar-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--main-color);
+    border-color: var(--secondary-color)
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+}
+
+h1, h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 100px 0 50px 0;
+}
+
+.bg-light-grey {
+    background-color: #f5f5f5
+}
+
+.bg-light-black {
+    background-color: #000000
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .05);
+    min-height: 100px;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--dark-color);
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+.logo-brand {
+    min-width: 80px;
+    max-width: 90px;
+}
+
+.navbar-toggler {
+    font-size: 40px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+#home {
+    background-color: var(--dark-color);
+    background-size: cover;
+    padding: 0;
+    min-height: 400px;
+}
+
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 3;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+.portfolio-details a h2, .portfolio-details a p {
+    color: var(--main-color);
+}
+
+section#directors .card-header {
+    background-color: var(--auxiliar-color);
+}
+
+div.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto auto 20px auto;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.member-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.member-details {
+    position: absolute;
+    color: var(--white-color);
+    bottom: 0;
+    left: 20px;
+}
+
+.member-details span {
+    font-size: 14px;
+}
+
+.member-details i {
+    padding: 0 5px;
+}
+
+
+.pricing-container {
+    margin: 15px 0;
+}
+
+.plans {
+    padding: 50px 80px;
+    border-radius: 2px;
+    min-width: 450px;
+}
+
+.plan-light {
+    background-color: var(--white-color);
+    border: 2px solid var(--dark-color);
+}
+
+.plan-dark {
+    background-color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+    color: var(--white-color);
+}
+
+.plans h2 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.plans h2 span {
+    font-size: 20px;
+}
+
+.plans ul {
+    list-style-type: square;
+}
+
+
+.carousel {
+    min-height: 240px;
+    padding: 40px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.carousel-item p {
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.carousel-indicators li {
+    background-color: var(--dark-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin: 0 8px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: var(--white-color);
+    opacity: 1;
+    width: 5%;
+}
+
+.control-button {
+    background-color: var(--dark-color);
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid var(--dark-color);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-user {
+    max-width: 240px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.testimonial-user h6 {
+    margin-bottom: 0px;
+}
+
+.testimonial-user span {
+    font-size: 12px;
+}
+
+.testimonial-user img {
+    border-radius: 50%;
+    max-width: 50px;
+    text-align: center;
+}
+
+.rating i {
+    color: var(--gold-color);
+    font-size: 26px;
+}
+
+section#crew {
+    margin: auto;
+}
+
+section#contact h3 b {
+    color: var(--secondary-color);
+}
+
+footer {
+    padding: 80px 0;
+    text-align: center;
+    color: var(--white-color);
+}
+
+footer .redes {
+    margin: auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+footer .fa {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+footer a:hover {
+    color: var(--white-color);
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-vimeo {
+    background: #45bbff;
+    color: white;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .portfolio-details h2 {
+        font-size: 32px;
+    }
+
+    .plans {
+        min-width: unset;
+        padding: 40px;
+    }
+
+    .carousel-item p {
+        font-size: 20px;
+    }
+
+    .footer-menu {
+        display: block !important;
+        padding: 20px 0 !important;
+        font-size: 20px;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .portfolio-details h2 {
+        font-size: 30px;
+    }
+
+    .plans {
+        min-width: unset;
+        padding: 40px 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
+
+
+
+
+
